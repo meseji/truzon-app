@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "TRUZON - Corporate Excellence",
+  title: "Truzon Labs - Corporate Excellence",
   description: "Building tomorrow's enterprises through strategic vision, innovative solutions, and unwavering commitment to excellence.",
   keywords: "corporate, business, excellence, innovation, strategy, consulting",
   authors: [{ name: "TRUZON" }],
