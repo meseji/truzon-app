@@ -6,20 +6,21 @@ export default function About() {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light text-grain font-serif mb-8 tracking-tight">
-              Defining the Future of 
-              <span className="font-medium block">Corporate Leadership</span>
+              Building Tomorrow's 
+              <span className="font-medium block">Technology Leaders</span>
             </h2>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed text-grain">
-              For over two decades, we have been at the forefront of corporate innovation, 
-              guiding enterprises through transformational journeys that redefine industry standards.
+              Truzon Labs LLP is a parent company that incubates, develops, and scales innovative 
+              technology businesses. We identify market opportunities and build sustainable ventures 
+              that drive digital transformation across industries.
             </p>
 
             <div className="space-y-6">
               {[
-                { number: '25+', label: 'Years of Excellence' },
-                { number: '500+', label: 'Global Partnerships' },
-                { number: '50+', label: 'Industry Awards' }
+                { number: '5+', label: 'Portfolio Companies' },
+                { number: '50M+', label: 'Combined Revenue' },
+                { number: '15+', label: 'Years Experience' }
               ].map((stat, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   <div className="text-3xl font-light text-grain font-serif">{stat.number}</div>

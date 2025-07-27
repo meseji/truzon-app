@@ -6,13 +6,13 @@ export default function Contact() {
           {/* Contact Information */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light text-grain font-serif mb-8 tracking-tight">
-              Let's Build 
-              <span className="font-medium block">Something Great</span>
+              Ready to Get 
+              <span className="font-medium block">Started?</span>
             </h2>
             
             <p className="text-lg text-gray-600 mb-12 leading-relaxed text-grain">
-              Ready to transform your vision into reality? Our team of experts is here to guide you 
-              through every step of your journey toward excellence.
+              Transform your business communication with Truzon's powerful SaaS solutions. 
+              Contact our team to discuss your requirements and get started today.
             </p>
 
             <div className="space-y-8">
@@ -24,11 +24,11 @@ export default function Contact() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-medium text-grain mb-2">Global Headquarters</h3>
+                  <h3 className="text-lg font-medium text-grain mb-2">Headquarters</h3>
                   <p className="text-gray-600 text-grain">
-                    123 Corporate Plaza<br />
-                    New York, NY 10001<br />
-                    United States
+                    Truzon Labs LLP<br />
+                    Tech Hub, Innovation District<br />
+                    Bangalore, India
                   </p>
                 </div>
               </div>
@@ -42,8 +42,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-medium text-grain mb-2">Email</h3>
                   <p className="text-gray-600 text-grain">
-                    hello@truzon.com<br />
-                    partnerships@truzon.com
+                    hello@truzonlabs.com<br />
+                    support@truzonlabs.com
                   </p>
                 </div>
               </div>
@@ -57,8 +57,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-medium text-grain mb-2">Phone</h3>
                   <p className="text-gray-600 text-grain">
-                    +1 (555) 123-4567<br />
-                    +1 (555) 987-6543
+                    +91 80 1234 5678<br />
+                    +91 80 9876 5432
                   </p>
                 </div>
               </div>

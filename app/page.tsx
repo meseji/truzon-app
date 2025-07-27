@@ -1,8 +1,10 @@
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Values from './components/Values';
+import Products from './components/Products';
+import Services from './components/Services';
+import Announcements from './components/Announcements';
+import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -13,8 +15,12 @@ export default function Home() {
         <Header />
         <Hero />
         <About />
-        <Portfolio />
-        <Values />
+        <Products />
+        <Services />
+
+        <Announcements />
+     
+        <Team />
         <Contact />
         <Footer />
       </div>

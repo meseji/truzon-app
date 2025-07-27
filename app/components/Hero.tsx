@@ -12,22 +12,22 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         <div className="fade-in-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light text-grain font-serif mb-8 tracking-tight leading-none">
-            Corporate
+            Innovation
             <br />
-            <span className="font-medium">Excellence</span>
+            <span className="font-medium">Ecosystem</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed text-grain font-light">
-            Building tomorrow's enterprises through strategic vision, 
-            innovative solutions, and unwavering commitment to excellence.
+            A parent company fostering innovation across multiple technology ventures. 
+            Building the future through strategic investments and business development.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button className="btn-premium bg-black text-white px-8 py-4 text-lg font-medium tracking-wide rounded-sm min-w-[200px]">
-              Explore Portfolio
+              Our Businesses
             </button>
             <button className="btn-premium bg-transparent text-black border-2 border-black px-8 py-4 text-lg font-medium tracking-wide rounded-sm min-w-[200px] hover:bg-black hover:text-white">
-              Learn More
+              Partnership Opportunities
             </button>
           </div>
         </div>
