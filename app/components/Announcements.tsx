@@ -153,9 +153,6 @@ export default function Announcements() {
             </article>
           ))}
         </div>
-
-        
-
         {/* Archive Link */}
         <div className="text-center mt-12">
           <a href="/announcements">
