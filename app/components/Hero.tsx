@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,0,0,0.15) 1px, transparent 0)`,
-          backgroundSize: '20px 20px'
-        }}></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden orbital-pattern">
+      {/* Subtle orbital elements that complement planet logo */}
+      <div className="absolute inset-0 opacity-40">
+        <div className="absolute top-1/4 left-1/4 w-80 h-80 border border-gray-100 rounded-full opacity-30"></div>
+        <div className="absolute bottom-1/3 right-1/4 w-60 h-60 border border-gray-150 rounded-full opacity-20"></div>
+        <div className="absolute top-1/2 right-1/3 w-40 h-40 border border-gray-200 rounded-full opacity-15"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-24 h-24 bg-gray-50 rounded-full opacity-10"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">

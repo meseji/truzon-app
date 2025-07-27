@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 export default function Home() {
   return (
     <div className="grain-effect">
-      <div className="paper-bg min-h-screen">
+      <div className="corporate-clean min-h-screen">
         <Header />
         <Hero />
         <About />

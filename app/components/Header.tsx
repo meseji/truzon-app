@@ -22,7 +22,13 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center space-x-3">
+            {/* Planet symbol placeholder */}
+            <div className="relative w-8 h-8">
+              <div className="w-8 h-8 border-2 border-black rounded-full"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-px border-t border-black opacity-60"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-px border-t border-black opacity-30"></div>
+            </div>
             <h1 className="text-2xl font-bold text-grain font-serif tracking-tight">
               TRUZON
             </h1>

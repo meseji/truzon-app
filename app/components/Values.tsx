@@ -23,7 +23,7 @@ export default function Values() {
   ];
 
   return (
-    <section id="values" className="py-24 bg-gray-50 paper-bg">
+    <section id="values" className="py-24 bg-gray-50 corporate-lines">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-grain font-serif mb-6 tracking-tight">

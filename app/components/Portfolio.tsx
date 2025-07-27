@@ -33,7 +33,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="py-24 bg-white">
+    <section id="portfolio" className="py-24 bg-white corporate-dots">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light text-grain font-serif mb-6 tracking-tight">
@@ -52,10 +52,20 @@ export default function Portfolio() {
               key={index} 
               className="group cursor-pointer"
             >
-              <div className="bg-gray-50 paper-bg aspect-[4/3] rounded-sm mb-6 relative overflow-hidden transition-all duration-300 group-hover:shadow-lg">
-                {/* Abstract visual representation */}
+              <div className="bg-gray-50 professional-texture aspect-[4/3] rounded-sm mb-6 relative overflow-hidden transition-all duration-300 group-hover:shadow-lg">
+                {/* Corporate visual representation */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 border-2 border-gray-300 transform rotate-45 group-hover:rotate-90 transition-transform duration-500"></div>
+                  <div className="relative">
+                    {/* Central element */}
+                    <div className="w-16 h-16 bg-gray-300 rounded-full group-hover:scale-110 transition-transform duration-500"></div>
+                    {/* Orbital elements */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      <div className="w-24 h-24 border border-gray-300 rounded-full group-hover:rotate-45 transition-transform duration-700 opacity-60"></div>
+                    </div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      <div className="w-32 h-32 border border-gray-200 rounded-full group-hover:-rotate-30 transition-transform duration-500 opacity-40"></div>
+                    </div>
+                  </div>
                 </div>
                 
                 {/* Category badge */}
