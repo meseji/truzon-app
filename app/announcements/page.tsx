@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Link from 'next/link';
 
 export default function AnnouncementsPage() {
     const [selectedCategory, setSelectedCategory] = useState('All');
@@ -201,11 +202,11 @@ export default function AnnouncementsPage() {
                                                     <span>•</span>
                                                     <span>{announcement.readTime}</span>
                                                 </div>
-                                                <a href={`/announcements/${announcement.id}`}>
+                                                <Link href={`/announcements/${announcement.id}`}>
                                                     <button className="text-black font-medium text-sm hover:text-gray-600 transition-colors text-grain group-hover:underline">
                                                         Read More →
                                                     </button>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </article>
@@ -305,11 +306,11 @@ export default function AnnouncementsPage() {
 
                                             {/* Action */}
                                             <div className="lg:flex-shrink-0">
-                                                <a href={`/announcements/${announcement.id}`}>
+                                                <Link href={`/announcements/${announcement.id}`}>
                                                     <button className="btn-premium bg-black text-white px-6 py-3 text-sm font-medium tracking-wide rounded-sm group-hover:bg-gray-800 transition-colors">
                                                         Read Full Article
                                                     </button>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>

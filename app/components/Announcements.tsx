@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Announcements() {
   const announcements = [
     {
@@ -143,11 +145,11 @@ export default function Announcements() {
 
                 {/* Read More */}
                 <div className="pt-4 border-t border-gray-100">
-                  <a href={`/announcements/${announcement.id}`}>
+                  <Link href={`/announcements/${announcement.id}`}>
                     <button className="text-black font-medium text-sm hover:text-gray-600 transition-colors text-grain group-hover:underline">
                       Read Full Announcement →
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -155,11 +157,11 @@ export default function Announcements() {
         </div>
         {/* Archive Link */}
         <div className="text-center mt-12">
-          <a href="/announcements">
+          <Link href="/announcements">
             <button className="btn-premium bg-transparent text-black border-2 border-black px-8 py-3 text-base font-medium tracking-wide rounded-sm hover:bg-black hover:text-white">
               View All Announcements
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function Header() {
@@ -47,13 +48,13 @@ export default function Header() {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {['About', 'Businesses', 'Services', 'News', 'Team', 'Contact'].map((item) => (
-                <a
+                <Link
                   key={item}
                   href={`#${item === 'Businesses' ? 'products' : item === 'News' ? 'announcements' : item.toLowerCase()}`}
                   className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-200 text-grain"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -91,14 +92,14 @@ export default function Header() {
         }`}>
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md border-t border-gray-100">
             {['About', 'Businesses', 'Services', 'News', 'Team', 'Contact'].map((item) => (
-              <a
+              <Link
                 key={item}
                 href={`#${item === 'Businesses' ? 'products' : item === 'News' ? 'announcements' : item.toLowerCase()}`}
                 onClick={closeMobileMenu}
                 className="text-gray-700 hover:text-black block px-3 py-3 text-base font-medium tracking-wide transition-colors duration-200 text-grain hover:bg-gray-50 rounded-sm"
               >
                 {item}
-              </a>
+              </Link>
             ))}
             
             {/* Mobile CTA Button */}

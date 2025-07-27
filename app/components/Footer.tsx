@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-16">
@@ -14,13 +16,13 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               {['LinkedIn', 'Twitter', 'Instagram'].map((social) => (
-                <a
+                <Link
                   key={social}
                   href="#"
                   className="w-10 h-10 bg-gray-800 rounded-sm flex items-center justify-center hover:bg-gray-700 transition-colors"
                 >
                   <span className="text-sm">{social[0]}</span>
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -31,9 +33,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {['About Us', 'Products', 'Team', 'Careers', 'Blog'].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <Link href="#" className="text-gray-300 hover:text-white transition-colors">
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -45,9 +47,9 @@ export default function Footer() {
             <ul className="space-y-3">
               {['Meseji Platform', 'Chat Widget', 'API Access', 'Custom Development', 'Support'].map((service) => (
                 <li key={service}>
-                  <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                  <Link href="#" className="text-gray-300 hover:text-white transition-colors">
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,13 +63,13 @@ export default function Footer() {
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((link) => (
-              <a
+              <Link
                 key={link}
                 href="#"
                 className="text-gray-400 hover:text-white text-sm transition-colors"
               >
                 {link}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

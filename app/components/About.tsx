@@ -6,7 +6,7 @@ export default function About() {
           {/* Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-light text-grain font-serif mb-8 tracking-tight">
-              Building Tomorrow's 
+              Building Tomorrow&apos;s 
               <span className="font-medium block">Technology Leaders</span>
             </h2>
             

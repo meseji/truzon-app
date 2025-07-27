@@ -3,6 +3,7 @@
 import { useParams } from 'next/navigation';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import Link from 'next/link';
 
 export default function AnnouncementArticlePage() {
     const params = useParams();
@@ -141,10 +142,10 @@ export default function AnnouncementArticlePage() {
                     <Header />
                     <div className="pt-32 pb-16 text-center">
                         <h1 className="text-4xl font-light text-grain font-serif mb-4">Article Not Found</h1>
-                        <p className="text-gray-600 mb-8">The announcement you're looking for doesn't exist.</p>
-                        <a href="/announcements" className="btn-premium bg-black text-white px-8 py-3 text-base font-medium tracking-wide rounded-sm">
+                        <p className="text-gray-600 mb-8">The announcement you're looking for doesn&apos;t exist.</p>
+                        <Link href="/announcements" className="btn-premium bg-black text-white px-8 py-3 text-base font-medium tracking-wide rounded-sm">
                             Back to Announcements
-                        </a>
+                        </Link>
                     </div>
                     <Footer />
                 </div>
@@ -184,9 +185,9 @@ export default function AnnouncementArticlePage() {
                         {/* Breadcrumb */}
                         <nav className="mb-8">
                             <ol className="flex items-center space-x-2 text-sm text-gray-500">
-                                <li><a href="/" className="hover:text-black transition-colors">Home</a></li>
+                                <li><Link href="/" className="hover:text-black transition-colors">Home</Link></li>
                                 <li>/</li>
-                                <li><a href="/announcements" className="hover:text-black transition-colors">Announcements</a></li>
+                                <li><Link href="/announcements" className="hover:text-black transition-colors">Announcements</Link></li>
                                 <li>/</li>
                                 <li className="text-gray-700">{announcement.title}</li>
                             </ol>
@@ -326,7 +327,7 @@ export default function AnnouncementArticlePage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                             {relatedAnnouncements.map((related) => (
                                 <article key={related.id} className="group">
-                                    <a href={`/announcements/${related.id}`}>
+                                    <Link href={`/announcements/${related.id}`}>
                                         <div className="bg-white professional-texture p-6 rounded-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-gray-200 h-full">
                                             <span className={`inline-block px-3 py-1 text-xs font-medium rounded-sm mb-4 ${getCategoryColor(related.category)}`}>
                                                 {related.category}
@@ -350,7 +351,7 @@ export default function AnnouncementArticlePage() {
                                                 </span>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </article>
                             ))}
                         </div>
@@ -383,11 +384,11 @@ export default function AnnouncementArticlePage() {
                 {/* Back to Announcements */}
                 <section className="py-8 bg-gray-50 border-t border-gray-200">
                     <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-                        <a href="/announcements">
+                        <Link href="/announcements">
                             <button className="btn-premium bg-transparent text-black border-2 border-black px-8 py-3 text-base font-medium tracking-wide rounded-sm hover:bg-black hover:text-white">
                                 ← Back to All Announcements
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </section>
 

@@ -11,7 +11,7 @@ export default function Contact() {
             </h2>
             
             <p className="text-lg text-gray-600 mb-12 leading-relaxed text-grain">
-              Transform your business communication with Truzon's powerful SaaS solutions. 
+              Transform your business communication with Truzon&apos;s powerful SaaS solutions. 
               Contact our team to discuss your requirements and get started today.
             </p>
 

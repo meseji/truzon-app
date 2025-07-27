@@ -72,7 +72,7 @@ export default function Team() {
             Join Our Growing Team
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed text-grain">
-            We're always looking for talented individuals who share our passion for building 
+            We&apos;re always looking for talented individuals who share our passion for building 
             exceptional software solutions. Explore career opportunities at Truzon Labs.
           </p>
           <button className="btn-premium bg-black text-white px-8 py-3 text-base font-medium tracking-wide rounded-sm">
