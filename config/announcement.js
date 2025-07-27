@@ -1,5 +1,4 @@
-export default function Announcements() {
-  const announcements = [
+const announcements = [
     {
         id: 1,
         date: '2025-01-15',
@@ -72,99 +71,28 @@ export default function Announcements() {
         isNew: false,
         featured: false
     },
-    
-   
+    {
+        id: 7,
+        date: '2024-11-10',
+        category: 'Partnership',
+        title: 'Enterprise Integration Partnership',
+        excerpt: 'New partnership enables seamless integration with leading enterprise software platforms.',
+        content: 'We have established a comprehensive partnership with major enterprise software providers to enable seamless integration capabilities across popular business platforms. This collaboration will allow our customers to integrate our communication solutions directly into their existing workflows, improving productivity and user adoption rates.',
+        author: 'Business Development',
+        readTime: '3 min read',
+        isNew: false,
+        featured: false
+    },
+    {
+        id: 8,
+        date: '2024-10-28',
+        category: 'Product Launch',
+        title: 'Mobile App 2.0 Release',
+        excerpt: 'Enhanced mobile experience with new features and improved performance across all devices.',
+        content: 'Our mobile application has been completely redesigned with version 2.0, offering enhanced user experience, improved performance, and new collaborative features. The update includes offline messaging capabilities, advanced security features, and seamless synchronization across all devices.',
+        author: 'Mobile Team',
+        readTime: '3 min read',
+        isNew: false,
+        featured: false
+    }
 ];
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
-    });
-  };
-
-  const getCategoryColor = (category: string) => {
-    const colors = {
-      'Partnership': 'bg-blue-100 text-blue-800',
-      'Investment': 'bg-green-100 text-green-800',
-      'Product Launch': 'bg-purple-100 text-purple-800',
-      'Expansion': 'bg-orange-100 text-orange-800',
-      'Recognition': 'bg-yellow-100 text-yellow-800',
-      'Acquisition': 'bg-red-100 text-red-800'
-    };
-    return colors[category as keyof typeof colors] || 'bg-gray-100 text-gray-800';
-  };
-
-  return (
-    <section id="announcements" className="py-24 bg-gray-50 corporate-lines">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light text-grain font-serif mb-6 tracking-tight">
-            Latest 
-            <span className="font-medium block">Announcements</span>
-          </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed text-grain">
-            Stay updated with the latest news, partnerships, and developments 
-            across our portfolio of technology companies.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {announcements.map((announcement, index) => (
-            <article key={index} className="group">
-              <div className="bg-white professional-texture p-8 rounded-sm hover:shadow-lg transition-all duration-300 h-full border border-gray-100 hover:border-gray-200">
-                {/* Header */}
-                <div className="flex items-start justify-between mb-4">
-                  <span className={`inline-block px-3 py-1 text-xs font-medium rounded-sm ${getCategoryColor(announcement.category)}`}>
-                    {announcement.category}
-                  </span>
-                  {announcement.isNew && (
-                    <span className="bg-red-500 text-white px-2 py-1 text-xs font-medium rounded-sm animate-pulse">
-                      NEW
-                    </span>
-                  )}
-                </div>
-
-                {/* Date */}
-                <time className="text-sm text-gray-500 text-grain mb-4 block">
-                  {formatDate(announcement.date)}
-                </time>
-
-                {/* Title */}
-                <h3 className="text-xl font-medium text-grain font-serif mb-4 group-hover:text-gray-600 transition-colors leading-tight">
-                  {announcement.title}
-                </h3>
-
-                {/* Excerpt */}
-                <p className="text-gray-600 leading-relaxed text-grain mb-6 flex-1">
-                  {announcement.excerpt}
-                </p>
-
-                {/* Read More */}
-                <div className="pt-4 border-t border-gray-100">
-                  <a href={`/announcements/${announcement.id}`}>
-                    <button className="text-black font-medium text-sm hover:text-gray-600 transition-colors text-grain group-hover:underline">
-                      Read Full Announcement →
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        
-
-        {/* Archive Link */}
-        <div className="text-center mt-12">
-          <a href="/announcements">
-            <button className="btn-premium bg-transparent text-black border-2 border-black px-8 py-3 text-base font-medium tracking-wide rounded-sm hover:bg-black hover:text-white">
-              View All Announcements
-            </button>
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-}
