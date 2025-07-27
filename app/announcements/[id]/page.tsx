@@ -142,7 +142,7 @@ export default function AnnouncementArticlePage() {
                     <Header />
                     <div className="pt-32 pb-16 text-center">
                         <h1 className="text-4xl font-light text-grain font-serif mb-4">Article Not Found</h1>
-                        <p className="text-gray-600 mb-8">The announcement you're looking for doesn&apos;t exist.</p>
+                        <p className="text-gray-600 mb-8">The announcement you&apos;re looking for doesn&apos;t exist.</p>
                         <Link href="/announcements" className="btn-premium bg-black text-white px-8 py-3 text-base font-medium tracking-wide rounded-sm">
                             Back to Announcements
                         </Link>
